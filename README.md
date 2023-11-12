@@ -1,25 +1,36 @@
-# Dinkle_SHAP
-This repository is for Deep SHAP based on LSTM or other model.
+# Dinkle_SHAP: Deep SHAP with LSTM or Other Models
 
-[SHAP](https://github.com/slundberg/shap).
-### How to use?
-you can use `python model_example.py` on CMD
-### Options
-you can use your own model、x_train and x_test
+This repository contains the implementation of Deep SHAP based on LSTM or other models. SHAP (SHapley Additive exPlanations) is a unified measure of feature importance that assigns each feature an importance value for a particular prediction.
 
-Use `--partNo` or `-N` means you can change your part number.
+[SHAP GitHub Repository](https://github.com/slundberg/shap)
 
-Use `--model_name` or `-m` means you can change your model.
+## Usage
 
-Use `--x_train` or `-xtr` means you can change your part number.
+To use this project, run the following command in your terminal:
 
-Use `--x_test` or `-xte` means you can change your part number.
+```sh
+python model_example.py
+```
 
-You can see more when you use `model_example.py -h`.
+You can use your own model, `x_train`, and `x_test`.
+
+## Options
+
+The script accepts several options:
+
+- `--partNo` or `-N`: Allows you to change your part number.
+- `--model_name` or `-m`: Allows you to change your model.
+- `--x_train` or `-xtr`: Allows you to change your `x_train`.
+- `--x_test` or `-xte`: Allows you to change your `x_test`.
+
+You can see more options by running `model_example.py -h`.
 
 For example:
 
-Use `python model_example.py -N 0162B00100 -m model.pt` means your part number is 0162B00100 and your model is model.pt.
+```sh
+python model_example.py -N 0162B00100 -m model.pt
+```
 
-Of course all of them have defaults.
+This command means your part number is `0162B00100` and your model is `model.pt`.
 
+All options have default values.
